@@ -1,7 +1,10 @@
-import { Inter } from 'next/font/google'
+import { Figtree, } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const figtree = Figtree({
+  subsets: ['latin'],
+  weight: ['600', '800']
+})
 
 export const metadata = {
   title: 'Blog Preview Card',
@@ -11,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </head>
+      <body className={figtree.className}>{children}</body>
     </html>
   )
 }
