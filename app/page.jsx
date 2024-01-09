@@ -21,7 +21,7 @@ export default function Home() {
       <div className='mt-3 mb-2'>
         Published 21 Dec 2023
 
-        <div className='text-xl mt-2 mb-2 font-bold'>
+        <div className=' cursor-pointer text-xl mt-2 mb-2 font-bold'>
           HTML & CSS foundations
         </div>
 
